@@ -1,16 +1,10 @@
 import { RevealOnScroll } from "./RevealOnScroll";
 
 export const About = () => {
-  const frontendSkills = [
-    "React",
-    "JavaScript",
-    "TypeScript",
-    "HTML",
-    "CSS",
-    "Tailwind",
-  ];
+  const frontendSkills = ["React", "JavaScript", "TypeScript", "HTML", "CSS", "Tailwind", "EmailJS"];
 
-  const backendSkills = ["Node.js", "MongoDB", "SQL", "MySQL", "Express.js"];
+  const backendSkills = ["Node.js", "MongoDB", "SQL", "MySQL", "Express.js", "Stripe", "AWS"];
+
   return (
     <section id="about" className="min-h-screen flex items-center justify-center py-20 text-left">
       <RevealOnScroll>
@@ -69,7 +63,7 @@ export const About = () => {
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
                   <strong>Intership at ABC (2023-2024)</strong>: Assisted in
-                  building reusable front end components and integration if REST
+                  building reusable front end components and integration of REST
                   APIs
                 </li>
               </ul>

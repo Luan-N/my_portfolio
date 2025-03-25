@@ -20,7 +20,7 @@ export const Projects = () => {
                 students and professionals alike.
               </p>
               <div>
-                {["React", "Node.js"].map((tech) => (
+                {["React", "Node.js", "EmailJS"].map((tech) => (
                   <span className="tech-style">{tech}</span>
                 ))}
               </div>
@@ -54,7 +54,7 @@ export const Projects = () => {
                 students and professionals alike.
               </p>
               <div>
-                {["React", "Node.js"].map((tech) => (
+                {["React", "Node.js", "EmailJS"].map((tech) => (
                   <span className="tech-style">{tech}</span>
                 ))}
               </div>

@@ -6,6 +6,7 @@ import { Home } from "./components/sections/Home"
 import { About } from './components/sections/About';
 import { Projects } from './components/sections/Projects';
 import { Contact } from './components/sections/Contact';
+import { Footer } from './components/sections/Footer';
 
 import { useState, useSyncExternalStore } from 'react';
 
@@ -15,7 +16,7 @@ function App() {
   return <>
     {!isLoaded && <LoadingScreen onComplete = {() => {setIsLoaded(true)}}/>}
     <div
-        className={`min-h-screen transition-opacity duration-700 ${
+        className={`min-h-screen w-full p-0 m-0 transition-opacity duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
         } bg-black text-gray-100`}
       >
@@ -25,6 +26,7 @@ function App() {
         <About/>
         <Projects/>
         <Contact/>
+        <Footer/>
       </div>
   </>;
 }

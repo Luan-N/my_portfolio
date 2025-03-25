@@ -34,11 +34,11 @@ export const Contact = () => {
 
   return (
     <section
-      id="Contact"
+      id="contact"
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <div className="px4 w-150">
+        <div className="px4 w-100 md:w-150">
           <h2 className="text-3xl gradient-text">Contact Me</h2>
           <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
 

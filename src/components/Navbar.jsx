@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { LuSquareMenu } from "react-icons/lu";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
@@ -14,9 +15,9 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             L.<span className="text-blue-500">N.</span>
           </a>
 
-          <div className="w-10 h-7 relative cursor-pointer z-40 md:hidden right-10 text-5x1" onClick={() => setMenuOpen((prev) => !prev)}>
+          <LuSquareMenu className="relative z-40 md:hidden" size={25}onClick={() => setMenuOpen((prev) => !prev)}>
             &#9776;
-          </div>
+          </LuSquareMenu>
 
           <div className="hidden md:flex items-center space-x-8 relative right-10 text-gray-300 transition-colors">
             <a className = "hover:text-white" href="#home"> Home </a>

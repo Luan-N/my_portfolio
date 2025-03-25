@@ -14,7 +14,7 @@ export const Home = () => {
           <p className="tex-gray-400 text-lg mb-8 max-w-lg mx-auto">
             As a Computer Science student who is passoniate about web
             development, I specialize in building responsive, accessible,
-            visually appealing websites with clean, efficient code
+            visually appealing websites with clean, efficient codes.
           </p>
         </div>
         <div className="flex justify-center space-x-4">

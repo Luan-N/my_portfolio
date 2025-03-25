@@ -11,10 +11,10 @@ import { Footer } from './components/sections/Footer';
 import { useState, useSyncExternalStore } from 'react';
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
   return <>
-    {!isLoaded && <LoadingScreen onComplete = {() => {setIsLoaded(true)}}/>}
+    {/* {!isLoaded && <LoadingScreen onComplete = {() => {setIsLoaded(true)}}/>} */}
     <div
         className={`min-h-screen w-full p-0 m-0 transition-opacity duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"

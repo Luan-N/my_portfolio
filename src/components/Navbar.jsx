@@ -36,7 +36,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-0 w-full z-20 bg-blue-400/40 backdrop-blur-lg border-b border-white/10 shadow-blue-400/20 shadow-lg">
+    <nav className="fixed top-0 w-full z-20 bg-blue-400/50 backdrop-blur-lg ">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
 

@@ -55,28 +55,16 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           </div>
 
           <LuSquareMenu
-            className="relative z-40 md:hidden"
+            className="relative z-40 md:hidden text-black cursor-pointer"
             size={25}
             onClick={() => setMenuOpen((prev) => !prev)}
           ></LuSquareMenu>
 
           <div className="hidden md:flex items-center justify-end space-x-8 relative right-10 transition-colors">
-            <a className="hover:text-gray-400" href="#home">
-              {" "}
-              Home{" "}
-            </a>
-            <a className="hover:text-gray-400" href="#about">
-              {" "}
-              About{" "}
-            </a>
-            <a className="hover:text-gray-400" href="#projects">
-              {" "}
-              Projects{" "}
-            </a>
-            <a className="hover:text-gray-400" href="#contact">
-              {" "}
-              Contact{" "}
-            </a>
+            <a className="hover:text-gray-400" href="#home"> Home</a>
+            <a className="hover:text-gray-400" href="#about">About</a>
+            <a className="hover:text-gray-400" href="#projects">Projects</a>
+            <a className="hover:text-gray-400" href="#contact">Contact</a>
           </div>
         </div>
       </div>

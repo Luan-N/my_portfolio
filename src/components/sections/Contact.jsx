@@ -39,7 +39,7 @@ export const Contact = () => {
     >
       <RevealOnScroll>
         <div className="px4 w-100 md:w-150">
-          <h2 className="text-3xl gradient-text">Contact Me</h2>
+          <h2 className="text-3xl gradient-text text-center">Contact Me</h2>
           <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
 
             <div className="relative">
@@ -48,7 +48,7 @@ export const Contact = () => {
                 id="name"
                 name="name"
                 required
-                className="w-full outline-none bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:bg-blue-500/5 focus:border-blue-500"
+                className="w-full outline-none bg-white/5 border border-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500"
                 placeholder="Full Name"
               />
             </div>
@@ -59,7 +59,7 @@ export const Contact = () => {
                 id="email"
                 name="email"
                 required
-                className="w-full outline-none bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:bg-blue-500/5 focus:border-blue-500"
+                className="w-full outline-none bg-white/5 border border-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500"
                 placeholder="Email"
               />
             </div>
@@ -70,7 +70,7 @@ export const Contact = () => {
                 name="message"
                 required
                 rows={5}
-                className="w-full outline-none bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:bg-blue-500/5 focus:border-blue-500"
+                className="w-full outline-none bg-white/5 border  border-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500"
                 placeholder="Message"
               />
             </div>
@@ -78,7 +78,7 @@ export const Contact = () => {
             <div>
               <button
                 type="submit"
-                className="relative w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition hover:-translate-y-0.5 hover:shadow-md shadow-blue-500/50 cursor-pointer"
+                className="relative w-full bg-blue-500 py-3 px-6 rounded font-medium text-white transition hover:-translate-y-0.5 hover:shadow-md shadow-blue-500/50 cursor-pointer"
               >
                 {" "}
                 Send Message

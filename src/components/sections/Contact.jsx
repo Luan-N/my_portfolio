@@ -48,7 +48,7 @@ export const Contact = () => {
                 id="name"
                 name="name"
                 required
-                className="w-full outline-none bg-white/5 border border-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500"
+                className="w-full outline-none bg-white/5 border border-gray-500 text-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500"
                 placeholder="Full Name"
               />
             </div>
@@ -59,7 +59,7 @@ export const Contact = () => {
                 id="email"
                 name="email"
                 required
-                className="w-full outline-none bg-white/5 border border-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500"
+                className="w-full outline-none bg-white/5 border border-gray-500 text-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500"
                 placeholder="Email"
               />
             </div>
@@ -70,7 +70,7 @@ export const Contact = () => {
                 name="message"
                 required
                 rows={5}
-                className="w-full outline-none bg-white/5 border  border-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500"
+                className="w-full outline-none bg-white/5 border  border-gray-500 text-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500"
                 placeholder="Message"
               />
             </div>

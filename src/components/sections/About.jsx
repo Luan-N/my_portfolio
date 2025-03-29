@@ -1,9 +1,11 @@
 import { RevealOnScroll } from "./RevealOnScroll";
 
 export const About = () => {
-  const frontendSkills = ["React", "JavaScript", "TypeScript", "HTML", "CSS", "Tailwind", "EmailJS"];
+  const frontendSkills = ["React", "JavaScript/TypeScript", "HTML", "CSS", "Tailwind"];
 
-  const backendSkills = ["Node.js", "MongoDB", "SQL", "MySQL", "Express.js", "Stripe", "AWS"];
+  const backendSkills = ["Node.js", "MongoDB", "SQL", "Express.js"];
+
+  const tools = ["AWS", "Git/GitHub", "Stripe"];
 
   return (
     <section id="about" className="min-h-screen flex items-center justify-center py-20 text-left">
@@ -26,8 +28,8 @@ export const About = () => {
               <div className="rounded-xl p-2 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold my-4">Front-End</h3>
                 <div className="flex flex-wrap gap-2">
-                  {frontendSkills.map((tech) => (
-                    <span className="tech-style">{tech}</span>
+                  {frontendSkills.map((tech, index) => (
+                    <span className="tech-style" key={index}>{tech}</span>
                   ))}
                 </div>
               </div>
@@ -35,12 +37,21 @@ export const About = () => {
               <div className="rounded-xl p-2 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold my-4">Back-End</h3>
                 <div className="flex flex-wrap gap-2">
-                  {backendSkills.map((tech) => (
-                    <span className="tech-style">{tech}</span>
+                  {backendSkills.map((tech, index) => (
+                    <span className="tech-style" key={index}>{tech}</span>
                   ))}
                 </div>
               </div>
             </div>
+
+            <div className="rounded-xl p-2 hover:-translate-y-1 transition-all">
+                <h3 className="text-xl font-bold my-4">Tools & Services</h3>
+                <div className="flex flex-wrap gap-2">
+                  {tools.map((tech, index) => (
+                    <span className="tech-style" key={index}>{tech}</span>
+                  ))}
+                </div>
+              </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">

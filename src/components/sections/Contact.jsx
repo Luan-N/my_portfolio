@@ -38,13 +38,13 @@ export const Contact = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <div className="px4 w-100 md:w-150">
+        <div className="px4 w-75 sm:w-100 md:w-150">
           <h2 className="text-3xl gradient-text text-center">Contact Me</h2>
           <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
 
             <div className="relative">
               <input
-                type="name"
+                type="text"
                 id="name"
                 name="name"
                 required

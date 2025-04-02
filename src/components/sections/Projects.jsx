@@ -4,7 +4,7 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen flex items-center justify-center py-20 bg-gray-100 dark:bg-gray-900 rounded-bl-[10rem] sm:rounded-bl-[30rem]"
     >
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
@@ -19,11 +19,11 @@ export const Projects = () => {
                 AI-powered tool that process PDFs, text, audio, or live speech
                 into concise summaries for users convenience.
               </p>
-              <div className="flex flex-wrap gap-2">
+              <ul className="flex flex-wrap gap-2">
                 {["React", "Express.js", "Generative AI"].map((tech, index) => (
-                  <span className="tech-style" key={index}>{tech}</span>
+                  <li className="tech-style" key={index}>{tech}</li>
                 ))}
-              </div>
+              </ul>
               <div className="mt-4 flex justify-end text-blue-500 hover:text-blue-300">
                 <a href="#">View Project →</a>
               </div>

@@ -42,35 +42,38 @@ export const Contact = () => {
           <h2 className="text-3xl gradient-text text-center">Contact Me</h2>
           <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
 
-            <div className="relative">
+            <div className="space-y-5">
+              <label htmlFor="name">Name</label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
                 className="w-full outline-none bg-white/5 border border-gray-500 text-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500"
-                placeholder="Full Name"
+                placeholder="John Smith"
               />
             </div>
 
             <div className="relative">
+            <label htmlFor="email">Email</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 required
                 className="w-full outline-none bg-white/5 border border-gray-500 text-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500"
-                placeholder="Email"
+                placeholder="example@gmail.com"
               />
             </div>
 
             <div className="relative">
+            <label htmlFor="message">Message</label>
               <textarea
                 id="message"
                 name="message"
                 required
                 rows={5}
-                className="w-full outline-none bg-white/5 border  border-gray-500 text-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500"
+                className="w-full outline-none bg-white/5 border  border-gray-500 text-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500 relative z-10"
                 placeholder="Message"
               />
             </div>
@@ -80,7 +83,6 @@ export const Contact = () => {
                 type="submit"
                 className="relative w-full bg-blue-500 py-3 px-6 rounded font-medium text-white transition hover:-translate-y-0.5 hover:shadow-md shadow-blue-500/50 cursor-pointer"
               >
-                {" "}
                 Send Message
               </button>
             </div>

@@ -8,10 +8,11 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
 
                      ${
                        menuOpen
-                         ? "h-screen opacity-100 pointer-events-auto"
-                         : "h-0 opacity-0 pointer-events-none"
+                         ? "h-screen opacity-100 block pointer-events-auto"
+                         : "h-0 opacity-0 hidden pointer-events-none"
                      }
                    `}
+                   id="mobile-menu"
     >
       <button
         onClick={() => setMenuOpen(false)}

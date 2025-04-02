@@ -8,7 +8,7 @@ export const About = () => {
   const tools = ["AWS", "Git/GitHub", "Stripe"];
 
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center py-20 text-left">
+    <section id="about" className="min-h-screen flex items-center justify-center py-20 text-left bg-gray-100 dark:bg-gray-900 rounded-tr-[10rem] sm:rounded-tr-[30rem]">
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl gradient-text text-center">
@@ -20,37 +20,37 @@ export const About = () => {
               University. I specialize in React for the front-end and Node.js in
               the back-end. I work with and optimize relational databses such as
               MySQL, as well as NoSQL databses like MongoDB. My goal as a
-              developer is to turn ideas to scalable, user-friendly, and
+              developer is to turn ideas into scalable, user-friendly, and
               accessible solutions.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-2 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold my-4">Front-End</h3>
-                <div className="flex flex-wrap gap-2">
+                <ul className="flex flex-wrap gap-2">
                   {frontendSkills.map((tech, index) => (
-                    <span className="tech-style" key={index}>{tech}</span>
+                    <li className="tech-style" key={index}>{tech}</li>
                   ))}
-                </div>
+                </ul>
               </div>
 
               <div className="rounded-xl p-2 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold my-4">Back-End</h3>
-                <div className="flex flex-wrap gap-2">
+                <ul className="flex flex-wrap gap-2">
                   {backendSkills.map((tech, index) => (
-                    <span className="tech-style" key={index}>{tech}</span>
+                    <li className="tech-style" key={index}>{tech}</li>
                   ))}
-                </div>
+                </ul>
               </div>
             </div>
 
             <div className="rounded-xl p-2 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold my-4">Tools & Services</h3>
-                <div className="flex flex-wrap gap-2">
+                <ul className="flex flex-wrap gap-2">
                   {tools.map((tech, index) => (
-                    <span className="tech-style" key={index}>{tech}</span>
+                    <li className="tech-style" key={index}>{tech}</li>
                   ))}
-                </div>
+                </ul>
               </div>
           </div>
 

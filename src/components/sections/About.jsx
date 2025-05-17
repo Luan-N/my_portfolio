@@ -1,35 +1,43 @@
 import { RevealOnScroll } from "./RevealOnScroll";
 
 export const About = () => {
-  const frontendSkills = ["React", "JavaScript/TypeScript", "HTML", "CSS", "Tailwind"];
+  const frontendSkills = [
+    "React/Next.js",
+    "JavaScript/TS",
+    "HTML",
+    "Tailwind/CSS",
+  ];
 
-  const backendSkills = ["Node.js", "MongoDB", "SQL", "Express.js"];
+  const backendSkills = ["Node.js/Express", "MongoDB", "SQL"];
 
-  const tools = ["AWS", "Git/GitHub", "Stripe"];
+  const tools = ["Git/GitHub"];
 
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center py-20 text-left bg-gray-100 dark:bg-gray-900 rounded-tr-[10rem] sm:rounded-tr-[30rem]">
+    <section
+      id="about"
+      className="min-h-screen flex items-center justify-center py-20 text-left bg-gray-50 dark:bg-[#181818] rounded-tr-[10rem] sm:rounded-tr-[20em]"
+    >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl gradient-text text-center">
-            About Me
-          </h2>
+          <h2 className="text-3xl gradient-text text-center underline">About Me</h2>
           <div>
             <p>
-              Aspirating full-stack developer studying at San Jose State
-              University. I specialize in React for the front-end and Node.js in
+              Wesite developer studying at San Jose State
+              University. I specialize in React, Nextjs for the front-end, Nodejs, Expressjs in
               the back-end. I work with and optimize relational databses such as
               MySQL, as well as NoSQL databses like MongoDB. My goal as a
               developer is to turn ideas into scalable, user-friendly, and
               accessible solutions.
             </p>
-
+            {/* SKILLS */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-2 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold my-4">Front-End</h3>
                 <ul className="flex flex-wrap gap-2">
                   {frontendSkills.map((tech, index) => (
-                    <li className="tech-style" key={index}>{tech}</li>
+                    <li className="tech-style" key={index}>
+                      {tech}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -38,46 +46,45 @@ export const About = () => {
                 <h3 className="text-xl font-bold my-4">Back-End</h3>
                 <ul className="flex flex-wrap gap-2">
                   {backendSkills.map((tech, index) => (
-                    <li className="tech-style" key={index}>{tech}</li>
+                    <li className="tech-style" key={index}>
+                      {tech}
+                    </li>
                   ))}
                 </ul>
               </div>
             </div>
 
             <div className="rounded-xl p-2 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold my-4">Tools & Services</h3>
-                <ul className="flex flex-wrap gap-2">
-                  {tools.map((tech, index) => (
-                    <li className="tech-style" key={index}>{tech}</li>
-                  ))}
-                </ul>
-              </div>
+              <h3 className="text-xl font-bold my-4">Tools & Services</h3>
+              <ul className="flex flex-wrap gap-2">
+                {tools.map((tech, index) => (
+                  <li className="tech-style" key={index}>
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-
+          {/* EDUCATION */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-2 rounded-xl border-gray-500/20 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">🎓Education</h3>
               <ul className="list-disc list-inside space-y-2">
                 <li>
-                  <strong>B.S. in Computer Science</strong> - San Jose State
+                  <span className="font-bold">B.S. in Computer Science</span> - San Jose State
                   University (2022-present)
                 </li>
                 <li>
-                  <strong>Courseworks</strong>: Introduction to Database
+                  <span className="font-bold">Courseworks</span>: Introduction to Database
                   Management Systems, Data Structure and Algorithm, Object
                   Oriented Design
                 </li>
               </ul>
             </div>
+            {/* WORK EXPEREIENCE */}
             <div className="p-2 rounded-xl border-gray-500/20 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">💼Work Experience</h3>
-              <ul className="list-disc list-inside space-y-2">
-                <li>
-                  <strong>Intership at ABC (2023-2024)</strong>: Assisted in
-                  building reusable front end components and integration of REST
-                  APIs
-                </li>
-              </ul>
+              <ul className="list-disc list-inside space-y-2"></ul>
             </div>
           </div>
         </div>

@@ -37,36 +37,37 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   return (
     <header>
-      <nav className="fixed top-0 w-full z-20 border-b border-black/20 dark:border-white/20 backdrop-blur-lg ">
+      <nav className="fixed top-0 w-full z-20 border-b border-black/20 dark:border-white/20 backdrop-blur-lg">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-16" style={{ paddingRight: 'env(safe-area-inset-right)', paddingLeft: 'env(safe-area-inset-left)' }}>
+            {/* Links */}
             <div className="flex items-center space-x-4">
               <a href="#home">
                 <h1 className="gradient-text text-2xl m-0 p-0">L.N</h1>
               </a>
 
               <a
-                href="https://github.com/Luan-GitHub-Source"
+                href="https://github.com/Luan-N"
                 target="_blank"
-                className="flex items-center justify-center w-7 h-7 bg-gray-800 rounded-full hover:bg-gray-800/70 transition-colors"
+                className="flex items-center justify-center w-10 h-10 bg-gray-800 rounded-full hover:bg-gray-800/70 transition-colors"
                 aria-label="Github Profile Link"
               >
-                <FaGithub className="text-white text-sm" />
+                <FaGithub className="text-white text-lg" />
               </a>
 
               <a
                 href="https://www.linkedin.com/in/luan-nguyen-164860358/"
                 target="_blank"
-                className="flex items-center justify-center w-7 h-7 bg-blue-500 rounded-full hover:bg-blue-500/70 transition-colors"
+                className="flex items-center justify-center w-10 h-10 bg-blue-600 rounded-full hover:bg-blue-600/70 transition-colors"
                 aria-label="LinkedIn Profile Link"
               >
-                <FaLinkedin className="text-white text-sm" />
+                <FaLinkedin className="text-white text-lg" />
               </a>
             </div>
 
             <div className="flex items-center space-x-4">
-              {/* Destop Menu Bar */}
-              <div className="hidden md:flex items-center justify-end space-x-8 relative transition-colors">
+              {/* Desktop Menu Bar */}
+              <div className="hidden md:flex items-center justify-end space-x-8">
                 <a className="hover:text-gray-400" href="#home">
                   Home
                 </a>
@@ -86,7 +87,6 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                 className="relative w-14 h-7 dark:bg-black bg-yellow-400 rounded-full flex items-center p-1 cursor-pointer hover:opacity-80 transition-colors duration-300 border border-white"
                 onClick={toggleTheme}
                 aria-label="Toggle Theme"
-                role="button"
               >
                 <div
                   className={`absolute w-5.5 h-5.5 rounded-full flex items-center justify-center transition-transform duration-300 ${
@@ -102,15 +102,19 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                   )}
                 </div>
               </button>
-              {/*Mobile Menu Bar*/}
-              <CiMenuFries
-                className="relative z-40 md:hidden cursor-pointer"
-                size={30}
-                onClick={() => setMenuOpen((prev) => !prev)}
+
+              {/* Mobile Menu Bar */}
+              <button
                 aria-label="Mobile Menu Toggle"
                 aria-controls="mobile-menu"
                 aria-expanded={menuOpen}
-              ></CiMenuFries>
+              >
+                <CiMenuFries
+                  className="relative z-40 md:hidden cursor-pointer"
+                  size={30}
+                  onClick={() => setMenuOpen((prev) => !prev)}
+                ></CiMenuFries>
+              </button>
             </div>
           </div>
         </div>

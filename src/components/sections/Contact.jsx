@@ -39,7 +39,7 @@ export const Contact = () => {
     >
       <RevealOnScroll>
         <div className="px4 w-75 sm:w-100 md:w-150">
-          <h2 className="text-3xl gradient-text text-center">Contact Me</h2>
+          <h2 className="text-3xl gradient-text text-center underline">Contact Me</h2>
           <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
 
             <div className="space-y-5">
@@ -49,8 +49,9 @@ export const Contact = () => {
                 id="name"
                 name="name"
                 required
-                className="w-full outline-none bg-white/5 border border-gray-500 text-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500"
+                className="w-full outline-none bg-white/5 border border-gray-500 text-gray-500 rounded px-4 py-3 transition focus:bg-blue-600/5 focus:border-blue-600"
                 placeholder="John Smith"
+                autoComplete="name"
               />
             </div>
 
@@ -61,8 +62,9 @@ export const Contact = () => {
                 id="email"
                 name="email"
                 required
-                className="w-full outline-none bg-white/5 border border-gray-500 text-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500"
+                className="w-full outline-none bg-white/5 border border-gray-500 text-gray-500 rounded px-4 py-3 transition focus:bg-blue-600/5 focus:border-blue-600"
                 placeholder="example@gmail.com"
+                autoComplete="email"
               />
             </div>
 
@@ -73,7 +75,7 @@ export const Contact = () => {
                 name="message"
                 required
                 rows={5}
-                className="w-full outline-none bg-white/5 border  border-gray-500 text-gray-500 rounded px-4 py-3 transition focus:bg-blue-500/5 focus:border-blue-500 relative z-10"
+                className="w-full outline-none bg-white/5 border  border-gray-500 text-gray-500 rounded px-4 py-3 transition focus:bg-blue-600/5 focus:border-blue-600 relative z-10"
                 placeholder="Message"
               />
             </div>
@@ -81,7 +83,7 @@ export const Contact = () => {
             <div>
               <button
                 type="submit"
-                className="relative w-full bg-blue-500 py-3 px-6 rounded font-medium text-white transition hover:-translate-y-0.5 hover:shadow-md shadow-blue-500/50 cursor-pointer"
+                className="relative w-full bg-blue-700 py-3 px-6 rounded font-medium text-white transition hover:-translate-y-0.5 hover:shadow-md shadow-blue-600/50 cursor-pointer"
               >
                 Send Message
               </button>

@@ -49,7 +49,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               <a
                 href="https://github.com/Luan-N"
                 target="_blank"
-                className="flex items-center justify-center w-10 h-10 bg-gray-800 rounded-full hover:bg-gray-800/70 transition-colors"
+                className="flex items-center justify-center w-8 h-8 bg-gray-800 rounded-full hover:bg-gray-800/70 transition-colors"
                 aria-label="Github Profile Link"
               >
                 <FaGithub className="text-white text-lg" />
@@ -58,7 +58,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               <a
                 href="https://www.linkedin.com/in/luan-nguyen-164860358/"
                 target="_blank"
-                className="flex items-center justify-center w-10 h-10 bg-blue-600 rounded-full hover:bg-blue-600/70 transition-colors"
+                className="flex items-center justify-center w-8 h-8 bg-blue-600 rounded-full hover:bg-blue-600/70 transition-colors"
                 aria-label="LinkedIn Profile Link"
               >
                 <FaLinkedin className="text-white text-lg" />
